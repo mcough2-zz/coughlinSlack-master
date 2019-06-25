@@ -1,0 +1,30 @@
+{
+	"help": {
+		"alias": [ "halp" ],
+		"endpoint": "#",
+		"help": "help [command](optional)",
+		"description": "To get help on all supported commands, or a specified command"
+	},
+	"coughlinsquery": {
+		"alias": [ "coughlinsquery" ],
+		"endpoint": "https://insights-api.newrelic.com/v1/accounts/541497/query?nrql=",
+		"help": "coughlinsquery [command](optional)",
+		"description": "Queries Demotron Insights for average duration from PageView"
+	},
+	"coughlinStatus": {
+		"alias": [ "serverStatus" ],
+		"endpoint": "https://api.newrelic.com/v2/servers.json?filter%5Breported%5D=true",
+		"help": "status [command](optional)",
+		"description": "returns info about servers"
+	},
+	"gem": {
+		"alias": [],
+		"endpoint": "https://rubygems.org/api/v1/gems/{gem}.json",
+		"help": "gem [gem-name]",
+		"description": "Fetches details of the specified Ruby gem"
+	},
+
+	"error": {
+		"exclude": true
+	}
+}
